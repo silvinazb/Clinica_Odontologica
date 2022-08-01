@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta de turno</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/post_turno.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/"><h2 class="text-warning mx-5">Clínica Odontológica Integral</h2></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-5">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Turnos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/get_all_turno.html">Listar turnos</a>
+                    <a class="dropdown-item" href="/post_turno.html">Agregar turno</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h4 class="text-center mb-4 mt-4">Agregar Odontólogo</h4>
+    <div class="row justify-content-center">
+        <div class="col-sm-6 ">
+            <form id="add_new_turno">
+                <div class="form-group text-center">
+                    <label class="control-label text-center" for="odontologo">Odontologo:</label>
+                    <input type="text" class="form-control text-center" id="odontologo"
+                           placeholder="Ingrese el id" name="nombre" required>
+                </div>
+                <div class="form-group text-center">
+                    <label class="control-label text-center" for="paciente">Paciente</label>
+                    <input type="text" class="form-control text-center" id="paciente"
+                           placeholder="Ingrese el id" name="nombre" required>
+                </div>
+                <div class="form-group text-center mb-5">
+                    <label class="control-label" for="fecha">Fecha:</label>
+                    <input type="text" class="form-control text-center" id="fecha"
+                           placeholder="Ingrese la fecha" name="nombre" required>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                    <button type="submit" class="btn btn-warning" id="btn-add-new-turno">Asignar turno</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
